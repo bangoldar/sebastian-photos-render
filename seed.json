@@ -1,0 +1,676 @@
+{
+  "photos": [
+    {
+      "id": "portofolio-0",
+      "objectKey": "/photos/portofolio-0.webp",
+      "title": "",
+      "alt": "Soccer photography by Sebastian Calle Perez",
+      "category": "Soccer",
+      "position": 0
+    },
+    {
+      "id": "portofolio-1",
+      "objectKey": "/photos/portofolio-1.webp",
+      "title": "",
+      "alt": "Soccer photography by Sebastian Calle Perez",
+      "category": "Soccer",
+      "position": 1
+    },
+    {
+      "id": "portofolio-2",
+      "objectKey": "/photos/portofolio-2.webp",
+      "title": "",
+      "alt": "Soccer photography by Sebastian Calle Perez",
+      "category": "Soccer",
+      "position": 2
+    },
+    {
+      "id": "portofolio-3",
+      "objectKey": "/photos/portofolio-3.webp",
+      "title": "",
+      "alt": "Soccer photography by Sebastian Calle Perez",
+      "category": "Soccer",
+      "position": 3
+    },
+    {
+      "id": "portofolio-4",
+      "objectKey": "/photos/portofolio-4.webp",
+      "title": "",
+      "alt": "Soccer photography by Sebastian Calle Perez",
+      "category": "Soccer",
+      "position": 4
+    },
+    {
+      "id": "portofolio-5",
+      "objectKey": "/photos/portofolio-5.webp",
+      "title": "",
+      "alt": "Soccer photography by Sebastian Calle Perez",
+      "category": "Soccer",
+      "position": 5
+    },
+    {
+      "id": "portofolio-6",
+      "objectKey": "/photos/portofolio-6.webp",
+      "title": "",
+      "alt": "Soccer photography by Sebastian Calle Perez",
+      "category": "Soccer",
+      "position": 6
+    },
+    {
+      "id": "portofolio-7",
+      "objectKey": "/photos/portofolio-7.webp",
+      "title": "",
+      "alt": "Soccer photography by Sebastian Calle Perez",
+      "category": "Soccer",
+      "position": 7
+    },
+    {
+      "id": "portofolio-8",
+      "objectKey": "/photos/portofolio-8.webp",
+      "title": "",
+      "alt": "Soccer photography by Sebastian Calle Perez",
+      "category": "Soccer",
+      "position": 8
+    },
+    {
+      "id": "portofolio-9",
+      "objectKey": "/photos/portofolio-9.webp",
+      "title": "",
+      "alt": "Soccer photography by Sebastian Calle Perez",
+      "category": "Soccer",
+      "position": 9
+    },
+    {
+      "id": "portofolio-10",
+      "objectKey": "/photos/portofolio-10.webp",
+      "title": "",
+      "alt": "Soccer photography by Sebastian Calle Perez",
+      "category": "Soccer",
+      "position": 10
+    },
+    {
+      "id": "portofolio-11",
+      "objectKey": "/photos/portofolio-11.webp",
+      "title": "",
+      "alt": "Soccer photography by Sebastian Calle Perez",
+      "category": "Soccer",
+      "position": 11
+    },
+    {
+      "id": "portofolio-12",
+      "objectKey": "/photos/portofolio-12.webp",
+      "title": "",
+      "alt": "Soccer photography by Sebastian Calle Perez",
+      "category": "Soccer",
+      "position": 12
+    },
+    {
+      "id": "portofolio-13",
+      "objectKey": "/photos/portofolio-13.webp",
+      "title": "",
+      "alt": "Soccer photography by Sebastian Calle Perez",
+      "category": "Soccer",
+      "position": 13
+    },
+    {
+      "id": "portofolio-14",
+      "objectKey": "/photos/portofolio-14.webp",
+      "title": "",
+      "alt": "Soccer photography by Sebastian Calle Perez",
+      "category": "Soccer",
+      "position": 14
+    },
+    {
+      "id": "portofolio-15",
+      "objectKey": "/photos/portofolio-15.webp",
+      "title": "",
+      "alt": "Soccer photography by Sebastian Calle Perez",
+      "category": "Soccer",
+      "position": 15
+    },
+    {
+      "id": "portofolio-16",
+      "objectKey": "/photos/portofolio-16.webp",
+      "title": "",
+      "alt": "Soccer photography by Sebastian Calle Perez",
+      "category": "Soccer",
+      "position": 16
+    },
+    {
+      "id": "portofolio-17",
+      "objectKey": "/photos/portofolio-17.webp",
+      "title": "",
+      "alt": "Soccer photography by Sebastian Calle Perez",
+      "category": "Soccer",
+      "position": 17
+    },
+    {
+      "id": "portofolio-18",
+      "objectKey": "/photos/portofolio-18.webp",
+      "title": "",
+      "alt": "Soccer photography by Sebastian Calle Perez",
+      "category": "Soccer",
+      "position": 18
+    },
+    {
+      "id": "portofolio-19",
+      "objectKey": "/photos/portofolio-19.webp",
+      "title": "",
+      "alt": "Soccer photography by Sebastian Calle Perez",
+      "category": "Soccer",
+      "position": 19
+    },
+    {
+      "id": "portofolio-20",
+      "objectKey": "/photos/portofolio-20.webp",
+      "title": "",
+      "alt": "Soccer photography by Sebastian Calle Perez",
+      "category": "Soccer",
+      "position": 20
+    },
+    {
+      "id": "portofolio-21",
+      "objectKey": "/photos/portofolio-21.webp",
+      "title": "",
+      "alt": "Soccer photography by Sebastian Calle Perez",
+      "category": "Soccer",
+      "position": 21
+    },
+    {
+      "id": "portofolio-22",
+      "objectKey": "/photos/portofolio-22.webp",
+      "title": "",
+      "alt": "Soccer photography by Sebastian Calle Perez",
+      "category": "Soccer",
+      "position": 22
+    },
+    {
+      "id": "portofolio-23",
+      "objectKey": "/photos/portofolio-23.webp",
+      "title": "",
+      "alt": "Soccer photography by Sebastian Calle Perez",
+      "category": "Soccer",
+      "position": 23
+    },
+    {
+      "id": "portofolio-24",
+      "objectKey": "/photos/portofolio-24.webp",
+      "title": "",
+      "alt": "Soccer photography by Sebastian Calle Perez",
+      "category": "Soccer",
+      "position": 24
+    },
+    {
+      "id": "portofolio-25",
+      "objectKey": "/photos/portofolio-25.webp",
+      "title": "",
+      "alt": "Soccer photography by Sebastian Calle Perez",
+      "category": "Soccer",
+      "position": 25
+    },
+    {
+      "id": "portofolio-26",
+      "objectKey": "/photos/portofolio-26.webp",
+      "title": "",
+      "alt": "Soccer photography by Sebastian Calle Perez",
+      "category": "Soccer",
+      "position": 26
+    },
+    {
+      "id": "portofolio-27",
+      "objectKey": "/photos/portofolio-27.webp",
+      "title": "",
+      "alt": "Soccer photography by Sebastian Calle Perez",
+      "category": "Soccer",
+      "position": 27
+    },
+    {
+      "id": "portofolio-28",
+      "objectKey": "/photos/portofolio-28.webp",
+      "title": "",
+      "alt": "Soccer photography by Sebastian Calle Perez",
+      "category": "Soccer",
+      "position": 28
+    },
+    {
+      "id": "portofolio-29",
+      "objectKey": "/photos/portofolio-29.webp",
+      "title": "",
+      "alt": "Soccer photography by Sebastian Calle Perez",
+      "category": "Soccer",
+      "position": 29
+    },
+    {
+      "id": "portofolio-30",
+      "objectKey": "/photos/portofolio-30.webp",
+      "title": "",
+      "alt": "Soccer photography by Sebastian Calle Perez",
+      "category": "Soccer",
+      "position": 30
+    },
+    {
+      "id": "portofolio-31",
+      "objectKey": "/photos/portofolio-31.webp",
+      "title": "",
+      "alt": "Soccer photography by Sebastian Calle Perez",
+      "category": "Soccer",
+      "position": 31
+    },
+    {
+      "id": "basketball-0",
+      "objectKey": "/photos/basketball-0.webp",
+      "title": "",
+      "alt": "Basketball photography by Sebastian Calle Perez",
+      "category": "Basketball",
+      "position": 0
+    },
+    {
+      "id": "basketball-1",
+      "objectKey": "/photos/basketball-1.webp",
+      "title": "",
+      "alt": "Basketball photography by Sebastian Calle Perez",
+      "category": "Basketball",
+      "position": 1
+    },
+    {
+      "id": "basketball-2",
+      "objectKey": "/photos/basketball-2.webp",
+      "title": "",
+      "alt": "Basketball photography by Sebastian Calle Perez",
+      "category": "Basketball",
+      "position": 2
+    },
+    {
+      "id": "basketball-3",
+      "objectKey": "/photos/basketball-3.webp",
+      "title": "",
+      "alt": "Basketball photography by Sebastian Calle Perez",
+      "category": "Basketball",
+      "position": 3
+    },
+    {
+      "id": "basketball-4",
+      "objectKey": "/photos/basketball-4.webp",
+      "title": "",
+      "alt": "Basketball photography by Sebastian Calle Perez",
+      "category": "Basketball",
+      "position": 4
+    },
+    {
+      "id": "basketball-5",
+      "objectKey": "/photos/basketball-5.webp",
+      "title": "",
+      "alt": "Basketball photography by Sebastian Calle Perez",
+      "category": "Basketball",
+      "position": 5
+    },
+    {
+      "id": "basketball-6",
+      "objectKey": "/photos/basketball-6.webp",
+      "title": "",
+      "alt": "Basketball photography by Sebastian Calle Perez",
+      "category": "Basketball",
+      "position": 6
+    },
+    {
+      "id": "basketball-7",
+      "objectKey": "/photos/basketball-7.webp",
+      "title": "",
+      "alt": "Basketball photography by Sebastian Calle Perez",
+      "category": "Basketball",
+      "position": 7
+    },
+    {
+      "id": "basketball-8",
+      "objectKey": "/photos/basketball-8.webp",
+      "title": "",
+      "alt": "Basketball photography by Sebastian Calle Perez",
+      "category": "Basketball",
+      "position": 8
+    },
+    {
+      "id": "basketball-9",
+      "objectKey": "/photos/basketball-9.webp",
+      "title": "",
+      "alt": "Basketball photography by Sebastian Calle Perez",
+      "category": "Basketball",
+      "position": 9
+    },
+    {
+      "id": "basketball-10",
+      "objectKey": "/photos/basketball-10.webp",
+      "title": "",
+      "alt": "Basketball photography by Sebastian Calle Perez",
+      "category": "Basketball",
+      "position": 10
+    },
+    {
+      "id": "basketball-11",
+      "objectKey": "/photos/basketball-11.webp",
+      "title": "",
+      "alt": "Basketball photography by Sebastian Calle Perez",
+      "category": "Basketball",
+      "position": 11
+    },
+    {
+      "id": "basketball-12",
+      "objectKey": "/photos/basketball-12.webp",
+      "title": "",
+      "alt": "Basketball photography by Sebastian Calle Perez",
+      "category": "Basketball",
+      "position": 12
+    },
+    {
+      "id": "basketball-13",
+      "objectKey": "/photos/basketball-13.webp",
+      "title": "",
+      "alt": "Basketball photography by Sebastian Calle Perez",
+      "category": "Basketball",
+      "position": 13
+    },
+    {
+      "id": "basketball-14",
+      "objectKey": "/photos/basketball-14.webp",
+      "title": "",
+      "alt": "Basketball photography by Sebastian Calle Perez",
+      "category": "Basketball",
+      "position": 14
+    },
+    {
+      "id": "basketball-15",
+      "objectKey": "/photos/basketball-15.webp",
+      "title": "",
+      "alt": "Basketball photography by Sebastian Calle Perez",
+      "category": "Basketball",
+      "position": 15
+    },
+    {
+      "id": "creative-0",
+      "objectKey": "/photos/creative-0.webp",
+      "title": "",
+      "alt": "Creative photography by Sebastian Calle Perez",
+      "category": "Creative",
+      "position": 0
+    },
+    {
+      "id": "creative-1",
+      "objectKey": "/photos/creative-1.webp",
+      "title": "",
+      "alt": "Creative photography by Sebastian Calle Perez",
+      "category": "Creative",
+      "position": 1
+    },
+    {
+      "id": "creative-2",
+      "objectKey": "/photos/creative-2.webp",
+      "title": "",
+      "alt": "Creative photography by Sebastian Calle Perez",
+      "category": "Creative",
+      "position": 2
+    },
+    {
+      "id": "creative-3",
+      "objectKey": "/photos/creative-3.webp",
+      "title": "",
+      "alt": "Creative photography by Sebastian Calle Perez",
+      "category": "Creative",
+      "position": 3
+    },
+    {
+      "id": "creative-4",
+      "objectKey": "/photos/creative-4.webp",
+      "title": "",
+      "alt": "Creative photography by Sebastian Calle Perez",
+      "category": "Creative",
+      "position": 4
+    },
+    {
+      "id": "creative-5",
+      "objectKey": "/photos/creative-5.webp",
+      "title": "",
+      "alt": "Creative photography by Sebastian Calle Perez",
+      "category": "Creative",
+      "position": 5
+    },
+    {
+      "id": "creative-6",
+      "objectKey": "/photos/creative-6.webp",
+      "title": "",
+      "alt": "Creative photography by Sebastian Calle Perez",
+      "category": "Creative",
+      "position": 6
+    },
+    {
+      "id": "creative-7",
+      "objectKey": "/photos/creative-7.webp",
+      "title": "",
+      "alt": "Creative photography by Sebastian Calle Perez",
+      "category": "Creative",
+      "position": 7
+    },
+    {
+      "id": "creative-8",
+      "objectKey": "/photos/creative-8.webp",
+      "title": "",
+      "alt": "Creative photography by Sebastian Calle Perez",
+      "category": "Creative",
+      "position": 8
+    },
+    {
+      "id": "creative-9",
+      "objectKey": "/photos/creative-9.webp",
+      "title": "",
+      "alt": "Creative photography by Sebastian Calle Perez",
+      "category": "Creative",
+      "position": 9
+    },
+    {
+      "id": "creative-10",
+      "objectKey": "/photos/creative-10.webp",
+      "title": "",
+      "alt": "Creative photography by Sebastian Calle Perez",
+      "category": "Creative",
+      "position": 10
+    },
+    {
+      "id": "creative-11",
+      "objectKey": "/photos/creative-11.webp",
+      "title": "",
+      "alt": "Creative photography by Sebastian Calle Perez",
+      "category": "Creative",
+      "position": 11
+    },
+    {
+      "id": "creative-12",
+      "objectKey": "/photos/creative-12.webp",
+      "title": "",
+      "alt": "Creative photography by Sebastian Calle Perez",
+      "category": "Creative",
+      "position": 12
+    },
+    {
+      "id": "creative-13",
+      "objectKey": "/photos/creative-13.webp",
+      "title": "",
+      "alt": "Creative photography by Sebastian Calle Perez",
+      "category": "Creative",
+      "position": 13
+    },
+    {
+      "id": "creative-14",
+      "objectKey": "/photos/creative-14.webp",
+      "title": "",
+      "alt": "Creative photography by Sebastian Calle Perez",
+      "category": "Creative",
+      "position": 14
+    },
+    {
+      "id": "creative-15",
+      "objectKey": "/photos/creative-15.webp",
+      "title": "",
+      "alt": "Creative photography by Sebastian Calle Perez",
+      "category": "Creative",
+      "position": 15
+    },
+    {
+      "id": "hockey-0",
+      "objectKey": "/photos/hockey-0.webp",
+      "title": "",
+      "alt": "Hockey photography by Sebastian Calle Perez",
+      "category": "Hockey",
+      "position": 0
+    },
+    {
+      "id": "hockey-1",
+      "objectKey": "/photos/hockey-1.webp",
+      "title": "",
+      "alt": "Hockey photography by Sebastian Calle Perez",
+      "category": "Hockey",
+      "position": 1
+    },
+    {
+      "id": "hockey-2",
+      "objectKey": "/photos/hockey-2.webp",
+      "title": "",
+      "alt": "Hockey photography by Sebastian Calle Perez",
+      "category": "Hockey",
+      "position": 2
+    },
+    {
+      "id": "hockey-3",
+      "objectKey": "/photos/hockey-3.webp",
+      "title": "",
+      "alt": "Hockey photography by Sebastian Calle Perez",
+      "category": "Hockey",
+      "position": 3
+    },
+    {
+      "id": "hockey-4",
+      "objectKey": "/photos/hockey-4.webp",
+      "title": "",
+      "alt": "Hockey photography by Sebastian Calle Perez",
+      "category": "Hockey",
+      "position": 4
+    },
+    {
+      "id": "hockey-5",
+      "objectKey": "/photos/hockey-5.webp",
+      "title": "",
+      "alt": "Hockey photography by Sebastian Calle Perez",
+      "category": "Hockey",
+      "position": 5
+    },
+    {
+      "id": "hockey-6",
+      "objectKey": "/photos/hockey-6.webp",
+      "title": "",
+      "alt": "Hockey photography by Sebastian Calle Perez",
+      "category": "Hockey",
+      "position": 6
+    },
+    {
+      "id": "hockey-7",
+      "objectKey": "/photos/hockey-7.webp",
+      "title": "",
+      "alt": "Hockey photography by Sebastian Calle Perez",
+      "category": "Hockey",
+      "position": 7
+    },
+    {
+      "id": "hockey-8",
+      "objectKey": "/photos/hockey-8.webp",
+      "title": "",
+      "alt": "Hockey photography by Sebastian Calle Perez",
+      "category": "Hockey",
+      "position": 8
+    },
+    {
+      "id": "hockey-9",
+      "objectKey": "/photos/hockey-9.webp",
+      "title": "",
+      "alt": "Hockey photography by Sebastian Calle Perez",
+      "category": "Hockey",
+      "position": 9
+    },
+    {
+      "id": "hockey-10",
+      "objectKey": "/photos/hockey-10.webp",
+      "title": "",
+      "alt": "Hockey photography by Sebastian Calle Perez",
+      "category": "Hockey",
+      "position": 10
+    },
+    {
+      "id": "hockey-11",
+      "objectKey": "/photos/hockey-11.webp",
+      "title": "",
+      "alt": "Hockey photography by Sebastian Calle Perez",
+      "category": "Hockey",
+      "position": 11
+    }
+  ],
+  "packages": [
+    {
+      "id": "standard",
+      "category": "single",
+      "name": "Standard",
+      "price": "$50",
+      "description": "Single player",
+      "details": "1 player\r\n35–45 professionally edited photos\r\n1 game coverage\r\n1–3 day digital delivery",
+      "position": 0
+    },
+    {
+      "id": "premium",
+      "category": "single",
+      "name": "Premium",
+      "price": "$65",
+      "description": "Single player",
+      "details": "1 player\n55+ professionally edited photos\nFull game coverage\nPriority editing and digital delivery within 1–2 days",
+      "position": 1
+    },
+    {
+      "id": "basic-group",
+      "category": "group",
+      "name": "Basic Group",
+      "price": "$80",
+      "description": "Group",
+      "details": "Up to 4 players\n10–15 edited photos per player\n1 game coverage\nIndividual moments for each player\n3–5 day digital delivery",
+      "position": 2
+    },
+    {
+      "id": "team",
+      "category": "group",
+      "name": "Team",
+      "price": "$130",
+      "description": "Group",
+      "details": "Up to 8 players\n10–15 edited photos per player\nFull game coverage\nIndividual and group photos\nCelebrations and key moments\n3–7 day digital delivery",
+      "position": 3
+    },
+    {
+      "id": "full-team",
+      "category": "group",
+      "name": "Full Team",
+      "price": "$200",
+      "description": "Soccer teams",
+      "details": "Designed for soccer teams. For other sports, please inquire.\nFull team coverage\n10+ edited photos per player\nFull game/session coverage\nIndividual action photos\nTeam and group photos\nCandid moments and celebrations\nPriority editing and delivery",
+      "position": 4
+    },
+    {
+      "id": "add-ons",
+      "category": "addons",
+      "name": "Add-ons",
+      "price": "",
+      "description": "Make it your own",
+      "details": "Rush delivery — $15\n15 extra edited photos — $15\nExtended coverage (30 minutes) — $25\nAdditional player — $30 (group packages only)",
+      "position": 5
+    }
+  ],
+  "pageCopy": {
+    "groupTitle": "Team Package",
+    "groupText": "The Full Team Package is designed specifically for soccer teams. If you are a hockey, basketball, or other sports team, please reach out through the Contact section of the website so we can discuss a package that fits your team’s needs.",
+    "eventsTitle": "Events",
+    "eventsText": "For event photography, tournaments, graduations, or other special occasions, please email (sebphotosbc@gmail.com) or DM me to discuss availability and pricing. Packages can be customized to suit your event and specific needs!\n\nA small transportation fee may apply depending on the location. If none of our packages perfectly fits your needs, feel free to reach out! We’d be happy to create a customized package tailored to your specific occasion.",
+    "bookingTitle": "Ready to Book?",
+    "bookingText": "Interested in booking a photography package? Head over to the Contact section of the website and send me a message with the package you’re interested in.\n\nWhen contacting me, please include your preferred date, time, and location so I can confirm availability and provide an accurate quote.\n\nPlease note that additional fees may apply depending on the location, such as transportation or travel fees.\n\nI’ll get back to you within 1–2 business days to confirm availability and go over the details of your booking."
+  }
+}

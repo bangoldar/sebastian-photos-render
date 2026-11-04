@@ -1,0 +1,17 @@
+import {useEffect,useState} from 'react';
+import Admin from './Admin';
+
+type Inquiry={id:string;name:string;email:string;package:string;message:string;createdAt:string};
+export default function Dashboard(){
+ const [signedIn,setSignedIn]=useState<boolean|null>(null);
+ const [tab,setTab]=useState<'edit'|'messages'>('edit');
+ const [message,setMessage]=useState('');
+ const [inquiries,setInquiries]=useState<Inquiry[]>([]);
+ const [emailStatus,setEmailStatus]=useState<{configured:boolean;pending:number}|null>(null);
+ useEffect(()=>{document.title='Dashboard | Sebastian Calle Perez';fetch('/api/admin',{cache:'no-store'}).then(r=>setSignedIn(r.ok)).catch(()=>{setSignedIn(false);setMessage('Could not connect. Please try again.')})},[]);
+ useEffect(()=>{if(signedIn&&tab==='messages'){fetch('/api/inquiries',{cache:'no-store'}).then(async r=>{if(!r.ok)throw Error('Could not load messages.');return r.json()}).then(setInquiries).catch(e=>setMessage(e.message));fetch('/api/email-status',{cache:'no-store'}).then(r=>r.ok?r.json():null).then(setEmailStatus).catch(()=>setEmailStatus(null))}},[signedIn,tab]);
+ async function login(e:React.FormEvent<HTMLFormElement>){e.preventDefault();setMessage('Signing in…');try{const body=Object.fromEntries(new FormData(e.currentTarget).entries());const r=await fetch('/api/login',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});const data=await r.json();if(!r.ok)throw Error(data.error||'Could not sign in.');setMessage('');setSignedIn(true)}catch(error){setMessage(error instanceof Error?error.message:'Could not sign in.')}}
+ if(signedIn===null)return <main className="admin-shell"><p>Loading dashboard…</p></main>;
+ if(!signedIn)return <main className="admin-shell"><a href="/">← View portfolio</a><h1>Portfolio admin</h1><p>Sign in to manage the portfolio and see inquiries.</p><form className="admin-form" onSubmit={login}><label>Dashboard password<input type="password" name="password" minLength={14} maxLength={128} autoComplete="current-password" required/></label><button className="admin-button">Sign in</button></form><p role="status">{message}</p></main>;
+ return <><div className="dashboard-switch"><button aria-pressed={tab==='edit'} onClick={()=>setTab('edit')}>Portfolio editor</button><button aria-pressed={tab==='messages'} onClick={()=>setTab('messages')}>Inquiries</button></div>{tab==='edit'?<Admin/>:<main className="admin-shell"><header className="admin-header"><div><a href="/">← View portfolio</a><h1>Inquiries</h1><p>Messages sent through the contact form appear here.</p></div><button onClick={async()=>{await fetch('/api/logout',{method:'POST'});location.reload()}}>Sign out</button></header><p role="status">{message}</p>{emailStatus&&!emailStatus.configured&&<p className="content-notice">Email notifications are not configured. Check this inbox for new inquiries.</p>}{emailStatus?.configured&&emailStatus.pending>0&&<p className="content-notice">Some email notifications are waiting to be sent. Messages remain available below.</p>}{inquiries.length?inquiries.map(i=><article className="inquiry" key={i.id}><h2>{i.name}</h2><p><a href={`mailto:${encodeURIComponent(i.email)}?subject=${encodeURIComponent('Re: Photography inquiry')}`}>{i.email}</a> · {new Date(i.createdAt).toLocaleString()}</p>{i.package&&<p>Package: {i.package}</p>}<p className="inquiry-message">{i.message}</p></article>):<p>No inquiries yet.</p>}</main>}</>;
+}
