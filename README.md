@@ -14,4 +14,4 @@ For email notifications, set `BREVO_API_KEY`, `BREVO_SENDER_EMAIL` (a verified s
 
 ## Dashboard
 
-Visit `/admin/` and sign in with the password configured at first startup. The Portfolio editor manages galleries and packages. Inquiries lists contact messages, including each visitor's return email address. Opening an email address starts a reply in the device's mail app.
+Visit `/admin/` and sign in with the password configured at first startup. The Portfolio editor manages galleries and packages. Upload one photo at a time, and select a photo or package to edit it in a dialog. Inquiries lists contact messages, including each visitor's return email address. Opening an email address starts a reply in the device's mail app.

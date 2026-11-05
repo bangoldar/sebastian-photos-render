@@ -163,3 +163,31 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,te
  .site-header nav a[aria-current=page]{background:#fdd401;color:#000}
  .site-header nav a[aria-current=page] .nav-icon{color:#000}
 }
+
+/* Header menu and focused dashboard editors. */
+.site-header{position:relative;z-index:30}
+.mobile-menu{display:none}
+.edit-dialog{box-sizing:border-box;width:min(640px,calc(100% - 2rem));max-width:640px;max-height:calc(100dvh - 2rem);margin:auto;padding:0;overflow:auto;border:0;background:#fff;color:#000;box-shadow:0 16px 48px rgba(0,0,0,.3)}
+.edit-dialog::backdrop{background:rgba(0,0,0,.7)}
+.edit-dialog-inner{padding:1.5rem}
+.edit-dialog-header{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-bottom:1.25rem}
+.edit-dialog-header h2{margin:0;font:700 1.6rem 'Manrope Variable',sans-serif;letter-spacing:-.03em}
+.edit-dialog-close{display:grid;place-items:center;width:44px;height:44px;flex:none;background:#fff;border:1px solid #000;color:#000}
+.edit-dialog-close:disabled{opacity:.5}
+.edit-dialog .admin-form{max-width:none}
+.edit-dialog .admin-edit-preview{max-height:200px}
+.edit-dialog-status{min-height:1.4rem;margin:1rem 0 0}
+.edit-dialog-status:empty{display:none}
+@media(max-width:800px){
+ body:has(.site-header){padding-bottom:0}
+ .mobile-menu{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;min-width:80px;min-height:44px;padding:.5rem .65rem;background:#000;border:1px solid #fff;color:#fff;font-weight:700}
+ .mobile-menu:focus-visible{outline-color:#fdd401}
+ .menu-lines{display:inline-flex;flex-direction:column;justify-content:center;gap:5px;width:18px}
+ .menu-lines span{display:block;width:100%;height:2px;background:#fff}
+ .site-header nav{display:none;position:absolute;top:100%;bottom:auto;left:0;right:0;z-index:40;padding:.6rem 5% 1rem;background:#000;box-shadow:0 12px 20px rgba(0,0,0,.2)}
+ .site-header nav.open{display:flex;flex-direction:column;gap:.25rem;align-items:stretch}
+ .site-header nav a,.site-header nav a:last-child{display:flex;flex-direction:row;align-items:center;justify-content:flex-start;gap:.8rem;min-height:48px;padding:.75rem 1rem;font-size:.95rem}
+ .site-header nav a[aria-current=page]{background:#fdd401;color:#000}
+ .edit-dialog{width:calc(100% - 1.5rem);max-height:calc(100dvh - 1.5rem)}
+ .edit-dialog-inner{padding:1.1rem}
+}
