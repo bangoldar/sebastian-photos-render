@@ -10,7 +10,7 @@ The database stores dashboard changes, photos uploaded after launch, sessions an
 
 Render free web services can sleep during inactivity and take time to wake up. Free hosted services and database quotas can change; see the providers' current terms.
 
-For email notifications, set `BREVO_API_KEY`, `BREVO_SENDER_EMAIL` (a verified sender on the Brevo account), and `NOTIFY_EMAIL` in Render. The Brevo transactional sending service must be activated. Render supplies `RENDER_EXTERNAL_URL`; for another host set `PUBLIC_URL`. Notification emails contain a link to the inbox rather than the visitor's message. Messages remain in the database if delivery fails, and the app retries pending notifications while it is running.
+For email notifications, set `BREVO_API_KEY`, `BREVO_SENDER_EMAIL` (a verified sender on the Brevo account), and `NOTIFY_EMAIL` in Render. The Brevo transactional sending service must be activated. Render supplies `RENDER_EXTERNAL_URL`; for another host set `PUBLIC_URL`. Notification emails include the visitor's name, email, package, and message, and set the visitor as the reply-to address. Messages remain in the database if delivery fails, and the app retries pending notifications while it is running.
 
 ## Dashboard
 

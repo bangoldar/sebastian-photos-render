@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-const base='http://127.0.0.1:4179';
+const base=process.env.TEST_BASE||'http://127.0.0.1:4179';
 const request=(url,opts={})=>fetch(base+url,{...opts,headers:{origin:base,...opts.headers}});
 let r=await request('/api/content');assert.equal(r.status,200);let data=await r.json();assert.equal(data.photos.length,76);assert.equal(data.packages.length,6);
 assert.equal((await request('/api/admin')).status,401);

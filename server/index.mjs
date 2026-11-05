@@ -9,6 +9,7 @@ import { promisify } from 'node:util';
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { notificationPayload } from './notification.mjs';
 
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const scrypt=promisify(scryptCallback);
@@ -61,13 +62,14 @@ async function processNotifications(){
  if(processingNotifications||!emailConfigured())return;
  processingNotifications=true;
  try{
-  const pending=await pool.query("SELECT id FROM inquiries WHERE notification_sent_at IS NULL AND (notification_attempt_at IS NULL OR notification_attempt_at<now()-interval '5 minutes') ORDER BY created_at LIMIT 10");
+  const pending=await pool.query("SELECT id,name,email,package,message FROM inquiries WHERE notification_sent_at IS NULL AND (notification_attempt_at IS NULL OR notification_attempt_at<now()-interval '5 minutes') ORDER BY created_at LIMIT 10");
   for(const item of pending.rows){
    await pool.query('UPDATE inquiries SET notification_attempt_at=now() WHERE id=$1',[item.id]);
    try{
     const api=process.env.NODE_ENV==='test'&&process.env.TEST_EMAIL_API_URL?process.env.TEST_EMAIL_API_URL:'https://api.brevo.com/v3/smtp/email';
     const site=process.env.RENDER_EXTERNAL_URL||process.env.PUBLIC_URL;
-    const response=await fetch(api,{method:'POST',headers:{'content-type':'application/json','api-key':process.env.BREVO_API_KEY},body:JSON.stringify({sender:{name:'Sebastian Photos',email:process.env.BREVO_SENDER_EMAIL},to:[{email:process.env.NOTIFY_EMAIL}],subject:'New photography inquiry',textContent:`A new inquiry is waiting in your portfolio dashboard: ${site.replace(/\/$/,'')}/admin/`}),signal:AbortSignal.timeout(10000)});
+    const payload=notificationPayload(item,{sender:process.env.BREVO_SENDER_EMAIL,recipient:process.env.NOTIFY_EMAIL,site});
+    const response=await fetch(api,{method:'POST',headers:{'content-type':'application/json','api-key':process.env.BREVO_API_KEY},body:JSON.stringify(payload),signal:AbortSignal.timeout(10000)});
     if(!response.ok)throw Error(`Email provider returned ${response.status}`);
     await pool.query('UPDATE inquiries SET notification_sent_at=now() WHERE id=$1',[item.id]);
    }catch(e){console.error('Notification could not be sent:',e.message);break}
