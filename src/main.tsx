@@ -1,4 +1,6 @@
 import React from 'react';
+import '@fontsource-variable/dm-sans';
+import '@fontsource-variable/manrope';
 import {createRoot} from 'react-dom/client';
 import Portfolio from './Portfolio';
 import Dashboard from './Dashboard';

@@ -48,7 +48,7 @@ async function initialize(){
 }
 await initialize();
 app.set('trust proxy',1);
-app.use(helmet({contentSecurityPolicy:{directives:{defaultSrc:["'self'"],styleSrc:["'self'","'unsafe-inline'",'https://fonts.googleapis.com'],fontSrc:["'self'",'https://fonts.gstatic.com'],imgSrc:["'self'",'data:','blob:'],scriptSrc:["'self'"],connectSrc:["'self'"],objectSrc:["'none'"],frameAncestors:["'none'"]}}}));
+app.use(helmet({contentSecurityPolicy:{directives:{defaultSrc:["'self'"],styleSrc:["'self'","'unsafe-inline'"],fontSrc:["'self'"],imgSrc:["'self'",'data:','blob:'],scriptSrc:["'self'"],connectSrc:["'self'"],objectSrc:["'none'"],frameAncestors:["'none'"]}}}));
 app.use(cookieParser());app.use(express.json({limit:'16kb'}));app.use(express.urlencoded({extended:false,limit:'16kb'}));
 const sameOrigin=(req,res,next)=>{if(req.get('origin')!==`${req.protocol}://${req.get('host')}`)return bad(res,'Request origin not accepted.',403);next()};
 const limiter=(max,minutes)=>rateLimit({windowMs:minutes*60000,limit:max,standardHeaders:'draft-8',legacyHeaders:false,message:{error:'Too many attempts. Please wait and try again.'}});
