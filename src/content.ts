@@ -1,9 +1,9 @@
 export const defaults = [
  {id:'standard',category:'single',name:'Standard',price:'$50',description:'Single player',details:'1 player\n35–45 professionally edited photos\n1 game coverage\n1–3 day digital delivery',position:0},
  {id:'premium',category:'single',name:'Premium',price:'$65',description:'Single player',details:'1 player\n55+ professionally edited photos\nFull game coverage\nPriority editing and digital delivery within 1–2 days',position:1},
- {id:'basic-group',category:'group',name:'Basic Group',price:'$80',description:'Group',details:'Up to 4 players\n10–15 edited photos per player\n1 game coverage\nIndividual moments for each player\n3–5 day digital delivery',position:2},
- {id:'team',category:'group',name:'Team',price:'$130',description:'Group',details:'Up to 8 players\n10–15 edited photos per player\nFull game coverage\nIndividual and group photos\nCelebrations and key moments\n3–7 day digital delivery',position:3},
- {id:'full-team',category:'group',name:'Full Team',price:'$200',description:'Soccer teams',details:'Designed for soccer teams. For other sports, please inquire.\nFull team coverage\n10+ edited photos per player\nFull game/session coverage\nIndividual action photos\nTeam and group photos\nCandid moments and celebrations\nPriority editing and delivery',position:4},
+ {id:'basic-group',category:'group',name:'Basic Group',price:'$140',description:'Group',details:'Up to 4 players\n20+ edited photos per player\n1 game coverage\nIndividual moments for each player\n3–5 day digital delivery',position:2},
+ {id:'team',category:'group',name:'Super Group',price:'$175',description:'Group',details:'Up to 5 players\n40+ edited photos per player\nFull game coverage\nIndividual + group photos\nIndividual moments for each player\n3–7 day digital delivery',position:3},
+ {id:'full-team',category:'group',name:'Full Team',price:'$200',description:'Soccer teams',details:'9–16 players\n10+ edited photos per player\nFull game/session coverage\nIndividual action photos\nTeam & group photos\nCandid moments + celebrations\n3–7 day delivery\nOne convenient booking for the entire team',position:4},
  {id:'add-ons',category:'addons',name:'Add-ons',price:'',description:'Make it your own',details:'Rush delivery — $15\n15 extra edited photos — $15\nExtended coverage (30 minutes) — $25\nAdditional player — $30 (group packages only)',position:5},
 ];
 export const packageCategories = ['single','group','addons'] as const;

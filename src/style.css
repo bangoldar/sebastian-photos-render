@@ -191,3 +191,38 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,te
  .edit-dialog{width:calc(100% - 1.5rem);max-height:calc(100dvh - 1.5rem)}
  .edit-dialog-inner{padding:1.1rem}
 }
+
+/* Black and gold palette inspired by Sebastian's package artwork. */
+:root{--ink:#fff;--paper:#101010;--accent:#ffcc01;--warm:#ffcc01;--line:#494949;--muted:#d0d0d0;--navy:#090909}
+body{background:var(--paper);color:var(--ink);caret-color:var(--accent)}
+::selection{background:var(--accent);color:#101010}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline-color:var(--accent)}
+.site-header,.footer{background:#090909;border-color:#333}
+.home-services{background:#1d1d1d;color:#fff}
+.home-overline,.section-top h2 span,.page-header h1 span,.home-services .section-top h2 span{color:var(--accent)}
+.home-image,.gallery-cover,.photo-item{background:#222}
+.button-dark,.admin-button{background:var(--accent);border-color:var(--accent);color:#111}
+.button-dark:hover,.admin-button:hover{background:#fff;border-color:#fff;color:#111}
+.line-link{color:#fff;border-color:var(--accent)}
+.home-services .line-link{color:#fff;border-color:var(--accent)}
+.home-services .section-top p,.home-services .service-links p,.home-services .service-index,.footer p{color:#d0d0d0}
+.home-services .service-links,.home-services .service-links>a{border-color:#555}
+.cover-arrow{background:var(--accent);color:#111}
+.gallery-caption,.gallery-caption span{color:#fff}
+.gallery-caption span{color:var(--muted)}
+.service-links>a>svg,.home-services .service-links>a>svg,.package-price strong{color:var(--accent)}
+.back-link,.contact-email{color:#fff;text-decoration-color:var(--accent)}
+.contact-form input,.contact-form textarea,.admin-form input,.admin-form select,.admin-form textarea,.admin-filters input,.admin-filters select{border-color:#777;color:#fff;background:#222}
+.contact-form input::placeholder,.contact-form textarea::placeholder{color:#ccc}
+.admin-tabs button,.dashboard-switch button,.admin-list-item button,.admin-actions button:not(.admin-button),.admin-header button{color:#fff}
+.admin-header button{background:transparent;border:1px solid #aaa;padding:.7rem 1rem}
+.admin-tabs button[aria-pressed=true],.dashboard-switch button[aria-pressed=true]{border-color:var(--accent);color:var(--accent)}
+.admin-header a,.admin-shell>a,.inquiry a{color:var(--accent)}
+.admin-photo{background:#222;color:#fff}
+.edit-dialog{background:#1d1d1d;color:#fff}
+.edit-dialog-close{background:#1d1d1d;border-color:#aaa;color:#fff}
+.skip{background:var(--accent);color:#111}
+@media(max-width:800px){
+ .site-header nav a[aria-current=page]{background:var(--accent);color:#111}
+ .mobile-menu{border-color:#aaa}
+}

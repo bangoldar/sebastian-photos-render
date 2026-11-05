@@ -42,6 +42,15 @@ async function initialize(){
    for(const p of defaults.packages)await c.query('INSERT INTO packages VALUES ($1,$2,$3,$4,$5,$6,$7)',[p.id,p.category,p.name,p.price,p.description,p.details,p.position]);
    await c.query("INSERT INTO settings VALUES ('page_copy',$1),('initialized','1')",[JSON.stringify(defaults.pageCopy)]);
   }
+  // Apply the November group package update once; later dashboard edits remain authoritative.
+  const packageUpdate=await c.query("SELECT value FROM settings WHERE key='group_packages_2026_11'");
+  if(!packageUpdate.rowCount){
+   for(const [id,previousName] of [['basic-group','Basic Group'],['team','Team'],['full-team','Full Team']]){
+    const p=defaults.packages.find(item=>item.id===id);
+    await c.query('UPDATE packages SET name=$1,price=$2,details=$3 WHERE id=$4 AND name=$5',[p.name,p.price,p.details,id,previousName]);
+   }
+   await c.query("INSERT INTO settings (key,value) VALUES ('group_packages_2026_11','1')");
+  }
   const existing=await c.query("SELECT value FROM settings WHERE key='password'");
   if(!existing.rowCount){const pass=process.env.ADMIN_PASSWORD||'';if(pass.length<14||pass.length>128)throw Error('Set ADMIN_PASSWORD to 14–128 characters before starting the service.');await c.query("INSERT INTO settings VALUES ('password',$1)",[await passwordHash(pass)])}
   await c.query('COMMIT');
