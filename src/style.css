@@ -117,3 +117,49 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,te
  .admin-header{flex-wrap:wrap}
  .admin-filters label,.admin-filters input,.admin-filters select{width:100%;min-width:0}
 }
+
+/* Sebastian's original logo supplies the site palette. */
+:root{--ink:#000;--paper:#fff;--accent:#fdd401;--line:#000;--muted:#000;--navy:#000;--light-blue:#fff;--warm:#fdd401}
+body{background:#fff;color:#000;caret-color:#000}
+::selection{background:#fdd401;color:#000}
+.wordmark{display:inline-flex;align-items:center;gap:.65rem;line-height:1;color:inherit;flex-shrink:0}
+.wordmark .brand-name{font-weight:800;white-space:nowrap}
+.wordmark .brand-name span{font-weight:400}
+.brand-mark{display:grid;place-items:center;width:60px;height:46px;overflow:hidden;flex:none}
+.brand-mark img{display:block;width:68px;height:46px;max-width:none;object-fit:contain}
+.dashboard-brand-header{height:74px;background:#000;color:#fff;display:flex;align-items:center;padding:0 5%}
+.site-header,.footer,.home-services{background:#000;color:#fff}
+.site-header .wordmark i,.footer .wordmark i,.dashboard-brand-header .wordmark i{color:#fdd401}
+.site-header nav a[aria-current=page],.site-header nav a:hover{border-color:#fdd401}
+.site-header a:focus-visible,.footer a:focus-visible,.dashboard-brand-header a:focus-visible,.home-services a:focus-visible{outline-color:#fdd401}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline-color:#000}
+.home-overline{color:#000}
+.home-image,.gallery-cover,.photo-item{background:#fff}
+.home-image span{background:#000;color:#fff}
+.button-dark,.admin-button{background:#fdd401;border-color:#fdd401;color:#000}
+.button-dark:hover,.admin-button:hover{background:#000;border-color:#000;color:#fff}
+.line-link{color:#000;border-color:#000}
+.home-services .line-link{color:#fff;border-color:#fdd401}
+.home-services .section-top p,.home-services .service-links p,.home-services .service-index,.footer p{color:#fff}
+.home-services .service-links,.home-services .service-links>a{border-color:#fff}
+.section-top h2 span,.page-header h1 span,.home-services .section-top h2 span{color:#fdd401}
+.cover-arrow{background:#fdd401;color:#000}
+.gallery-caption,.gallery-caption span{color:#000}
+.service-links>a>svg{color:#000}
+.home-services .service-links>a>svg{color:#fdd401}
+.package-price strong,.back-link,.contact-email{color:#000}
+.back-link,.contact-email{text-decoration-color:#000}
+.contact-form input,.contact-form textarea,.admin-form input,.admin-form select,.admin-form textarea,.admin-filters input,.admin-filters select{border-color:#000;color:#000;background:#fff}
+.contact-form input::placeholder,.contact-form textarea::placeholder{color:#000;opacity:1}
+.footer a:hover{text-decoration-color:#fdd401}
+.lightbox{background:rgba(0,0,0,.97)}
+.admin-tabs button[aria-pressed=true],.dashboard-switch button[aria-pressed=true]{border-color:#000;color:#000}
+.admin-header a,.admin-shell>a,.inquiry a{color:#000}
+@media(max-width:800px){
+ .dashboard-brand-header{height:58px}
+ .brand-mark{width:52px;height:40px}
+ .brand-mark img{width:62px;height:42px}
+ .site-header nav{background:#000;box-shadow:0 -4px 18px rgba(0,0,0,.18)}
+ .site-header nav a[aria-current=page]{background:#fdd401;color:#000}
+ .site-header nav a[aria-current=page] .nav-icon{color:#000}
+}
