@@ -193,6 +193,8 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,te
 }
 
 /* Black and gold palette inspired by Sebastian's package artwork. */
+#root:has(>.site-header){min-height:100vh;min-height:100dvh;display:flex;flex-direction:column}
+#main-content{flex:1 0 auto}
 :root{--ink:#fff;--paper:#101010;--accent:#ffcc01;--warm:#ffcc01;--line:#494949;--muted:#d0d0d0;--navy:#090909}
 body{background:var(--paper);color:var(--ink);caret-color:var(--accent)}
 ::selection{background:var(--accent);color:#101010}
